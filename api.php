@@ -82,7 +82,7 @@ if ($filter == "") {
     $filteredDischi = $dischi;
 } else {
     foreach ($dischi as $disco) {
-        if (strtolower($disco['genre']) == strtolower($filter)) {
+        if (strpos(strtolower($disco['genre']), strtolower($filter)) !== false) {
             $filteredDischi[] = $disco;
         }
     }
