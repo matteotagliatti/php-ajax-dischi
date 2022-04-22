@@ -45,6 +45,7 @@ header input {
   background: white;
   padding: 1rem;
   border-radius: 1rem;
+  text-align: center;
 }
 
 .card img {
@@ -61,8 +62,4 @@ header input {
   margin-bottom: 0.4rem;
   font-size: 1.2rem;
   font-weight: bold;
-}
-
-.card p {
-  text-align: center;
 }

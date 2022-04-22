@@ -71,8 +71,6 @@ $dischi = [
         "genre" => "Pop",
         "year" => "1987"
     ],
-
-
 ];
 
 $filter = $_GET["genre"] ?? "";
