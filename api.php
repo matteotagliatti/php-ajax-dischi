@@ -75,5 +75,18 @@ $dischi = [
 
 ];
 
+$filter = $_GET["genre"] ?? "";
+$filteredDischi = [];
+
+if ($filter == "") {
+    $filteredDischi = $dischi;
+} else {
+    foreach ($dischi as $disco) {
+        if (strtolower($disco['genre']) == strtolower($filter)) {
+            $filteredDischi[] = $disco;
+        }
+    }
+}
+
 header("Content-Type: application/json; charset=utf-8");
-echo json_encode($dischi);
+echo json_encode($filteredDischi);
